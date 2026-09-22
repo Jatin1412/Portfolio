@@ -53,7 +53,6 @@ const typedHome = new Typed("#home-typed", {
 /*=============== CHANGE HEADER STYLES ===============*/
 const scrollHeader = () => {
   const header = document.getElementById("header");
-  console.log(this.scrollY);
   this.scrollY >= 50
     ? header.classList.add("scroll-header")
     : header.classList.remove("scroll-header");
@@ -100,8 +99,16 @@ servicesButtons.forEach((btn) => {
     }
   });
 });
-/*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/
 
+/*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/
+const tracks = document.querySelectorAll(".testimonials__content");
+
+tracks.forEach((track) => {
+  const cards = [...track.children];
+  for (const card of cards) {
+    track.appendChild(card.cloneNode(true));
+  }
+});
 /*=============== CONTACT EMAIL JS ===============*/
 
 /*=============== SHOW SCROLL UP ===============*/
