@@ -576,7 +576,7 @@
 
                   <div class="blob-big"></div>
                </article>
-               
+
                <article class="testimonials__card">
                   <div class="testimonials__rating">
                      <span class="testimonials__number">5.0</span>
@@ -670,13 +670,123 @@
 
       <!--==================== CONTACT SECTION ====================-->
       <section class="contact section" id="contact">
+         <h2 class="section__title">Contact <span>Me</span></h2>
 
+         <div class="contact__container container grid">
+            <form action="" class="contact__form grid" id="contact-form">
+               <div class="contact__group">
+                  <input type="text" id="name" name="user_name" required autocomplete="name" class="contact__input">
+                  <label for="name" class="contact__label">Name</label>
+               </div>
+
+               <div class="contact__group">
+                  <input type="email" id="email" name="user_email" required autocomplete="email" class="contact__input">
+                  <label for="email" class="contact__label">Email</label>
+               </div>
+
+               <div class="contact__group">
+                  <textarea name="user_message" id="message" required class="contact__input contact__area"></textarea>
+                  <label for="message" class="contact__label">Message</label>
+               </div>
+
+               <button type="submit" class="contact__button button">
+                  <span>Send Message</span>
+                  <i class="ri-arrow-right-line"></i>
+               </button>
+
+               <p class="contact__message" id="contact-message">Message</p>
+            </form>
+            </dvi>
+            <div class="contact__content grid">
+               <a href="mailto:jatinkumar9922@gmail.com" target="_blank" class="contact__link">
+                  <div class="contact__info">
+                     <i class="ri-mail-line contact__icon"></i>
+
+                     <div class="contact__text">
+                        <h3 class="contact__title">Email</h3>
+                        <address class="contact__address">jatinkumar9922@gmail.com</address>
+                     </div>
+                  </div>
+                  <div class="contact__arrow">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </div>
+               </a>
+               <a href="tel:+91 8126762069" target="_blank" class="contact__link">
+                  <div class="contact__info">
+                     <i class="ri-phone-line contact__icon"></i>
+
+                     <div class="contact__text">
+                        <h3 class="contact__title">Phone number</h3>
+                        <address class="contact__address">+91 8126762069</address>
+                     </div>
+                  </div>
+                  <div class="contact__arrow">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </div>
+               </a>
+               <a href="" target="_blank" class="contact__link">
+                  <div class="contact__info">
+                     <i class="ri-map-pin-line contact__icon"></i>
+
+                     <div class="contact__text">
+                        <h3 class="contact__title">Location </h3>
+                        <address class="contact__address">Jagdishpura - Agra 46/868</address>
+                     </div>
+                  </div>
+                  <div class="contact__arrow">
+                     <i class="ri-arrow-right-up-line"></i>
+                  </div>
+               </a>
+            </div>
       </section>
    </main>
 
    <!--==================== FOOTER ====================-->
    <footer class="footer">
+      <div class="footer__container container grid">
+         <h2 class="footer__title">COLLABORATE WITH JATIN AND START YOUR
+            JOURNEY IN CREATIVE DESIGN TODAY.</h2>
 
+         <div class="footer__content">
+            <ul class="footer__links">
+               <li>
+                  <a href="#work" class="footer__link">Wrok</a>
+               </li>
+               <li>
+                  <a href="#services" class="footer__link">Services</a>
+               </li>
+               <li>
+                  <a href="#skills" class="footer__link">Skills</a>
+               </li>
+            </ul>
+            <ul class="footer__social">
+               <li>
+                  <a href="" target="_blank" class="footer__social-link">
+                     <i class="ri-facebook-circle-line"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="" target="_blank" class="footer__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="" target="_blank" class="footer__social-link">
+                     <i class="ri-linkedin-box-line"></i>
+                  </a>
+               </li>
+               <li>
+                  <a href="" target="_blank" class="footer__social-link">
+                     <i class="ri-github-line"></i>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <small class="footer__copy">&#169; All Rights Reserved By Bedimcode</small>
+
+      <div class="blob-big"></div>
    </footer>
 
    <!--========== SCROLL UP ==========-->
