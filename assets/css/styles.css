@@ -521,21 +521,32 @@ img {
   border-radius: 1.5rem;
   overflow: hidden;
 }
+
+.work__data {
+  z-index: 5;
+}
+
 .work__link {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 1rem;
   margin-bottom: 1.5rem;
   z-index: 5;
 }
-.work__data {
-  z-index: 5;
-}
+
 .work__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   border-radius: 1rem;
   transition: transform 0.4s;
 }
+
 .work__arrow {
   position: absolute;
   top: 1rem;
